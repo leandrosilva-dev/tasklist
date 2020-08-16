@@ -1,0 +1,93 @@
+<div id="cabecalho">
+    <h1>Tasklist</h1>
+</div>
+<div cdkDropListGroup>
+    <div class="example-container">
+        <div cdkDropList 
+            [cdkDropListData]="todo"
+            class="example-list"
+            id="TODO"
+            (cdkDropListDropped)="drop($event)">
+            <h2>To do</h2>
+            <mat-card class="example-card" *ngFor="let task of todo" cdkDrag>
+                <mat-card-header>
+                    <mat-card-title>{{task.titulo}}</mat-card-title>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Criado em {{task.data_criacao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Alterado em {{task.data_edicao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                </mat-card-header>
+            
+                <mat-card-content>{{task.descricao}}</mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="example-container">
+        <div cdkDropList 
+            [cdkDropListData]="doing"
+            class="example-list"
+            id="DOING"
+            (cdkDropListDropped)="drop($event)">
+            <h2>Doing</h2>
+            <mat-card class="example-card" *ngFor="let task of doing" cdkDrag>
+                <mat-card-header>
+                    <mat-card-title>{{task.titulo}}</mat-card-title>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Criado em {{task.data_criacao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Alterado em {{task.data_edicao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                </mat-card-header>
+            
+                <mat-card-content>{{task.descricao}}</mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+  
+    <div class="example-container">
+        <div cdkDropList
+                [cdkDropListData]="done"
+                class="example-list"
+                id="DONE"
+                (cdkDropListDropped)="drop($event)">
+            <h2>Done</h2>
+            <mat-card class="example-card" *ngFor="let task of done" cdkDrag>
+                <mat-card-header>
+                    <mat-card-title>{{task.titulo}}</mat-card-title>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Criado em {{task.data_criacao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Alterado em {{task.data_edicao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                    <mat-card-subtitle><span class="material-icons">schedule</span> Concluido em {{task.data_conclusao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                </mat-card-header>
+        
+                <mat-card-content>{{task.descricao}}</mat-card-content>
+            </mat-card>
+        </div>
+  </div>
+
+  <div class="example-container">
+    <div cdkDropList
+            [cdkDropListData]="trash"
+            class="example-list"
+            id="TRASH"
+            (cdkDropListDropped)="drop($event)">
+        <h2>Trash</h2>
+        <mat-card class="example-card" *ngFor="let task of trash" cdkDrag>
+            <mat-card-header>
+                <mat-card-title>{{task.titulo}}</mat-card-title>
+                <mat-card-subtitle><span class="material-icons">schedule</span> Criado em {{task.data_criacao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                <mat-card-subtitle><span class="material-icons">schedule</span> Alterado em {{task.data_edicao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                <mat-card-subtitle><span class="material-icons">schedule</span> Concluido em {{task.data_conclusao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+                <mat-card-subtitle><span class="material-icons">schedule</span> Excluído em {{task.data_exclusao | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+            </mat-card-header>
+    
+            <mat-card-content>{{task.descricao}}</mat-card-content>
+    
+            <mat-card-actions>
+                <button mat-button (click)="deleteTarefa(task.task_id)"><i class="material-icons">delete</i></button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+  </div>
+</div>
+
+<mat-checkbox class="checkboxSembase" (click)="semAcessoBase()">Sem acesso a base de dados</mat-checkbox>
+
+<button class="buttonIncluir" (click)="openDialog()">
+    <span class="material-icons">addchart</span>
+</button>

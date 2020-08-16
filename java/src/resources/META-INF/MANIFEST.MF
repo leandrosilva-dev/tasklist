@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: spring-boot-starter-2.3.3.RELEASE.jar spring-boot-autoconfig
+ ure-2.3.3.RELEASE.jar android-json-0.0.20131108.vaadin1.jar spring-boot
+ -starter-json-2.3.3.RELEASE.jar spring-core-5.2.8.RELEASE.jar tomcat-em
+ bed-websocket-9.0.37.jar javax.json-api-1.1.4.jar jboss-logging-3.4.1.F
+ inal.jar spring-boot-2.3.3.RELEASE.jar json-smart-2.3.jar junit-jupiter
+ -api-5.6.2.jar snakeyaml-1.26.jar javassist-3.24.0-GA.jar jackson-core-
+ 2.11.2.jar accessors-smart-1.2.jar jakarta.transaction-api-1.3.3.jar ja
+ karta.annotation-api-1.3.5.jar jandex-2.1.3.Final.jar spring-boot-start
+ er-aop-2.3.3.RELEASE.jar junit-jupiter-5.6.2.jar xmlunit-core-2.7.0.jar
+  jakarta.el-3.0.3.jar spring-boot-starter-data-jpa-2.3.3.RELEASE.jar as
+ sertj-core-3.16.1.jar jackson-datatype-jdk8-2.11.2.jar spring-beans-5.2
+ .8.RELEASE.jar log4j-api-2.13.3.jar spring-boot-starter-tomcat-2.3.3.RE
+ LEASE.jar apiguardian-api-1.1.0.jar dom4j-2.1.3.jar byte-buddy-agent-1.
+ 10.14.jar jackson-databind-2.11.2.jar junit-jupiter-params-5.6.2.jar mo
+ ckito-junit-jupiter-3.3.3.jar classmate-1.5.1.jar junit-jupiter-engine-
+ 5.6.2.jar spring-expression-5.2.8.RELEASE.jar istack-commons-runtime-3.
+ 0.11.jar mockito-core-3.3.3.jar hibernate-core-5.4.20.Final.jar spring-
+ web-5.2.8.RELEASE.jar jackson-module-parameter-names-2.11.2.jar slf4j-a
+ pi-1.7.30.jar spring-jdbc-5.2.8.RELEASE.jar spring-tx-5.2.8.RELEASE.jar
+  spring-boot-starter-test-2.3.3.RELEASE.jar jakarta.xml.bind-api-2.3.3.
+ jar spring-boot-starter-web-2.3.3.RELEASE.jar spring-data-commons-2.3.3
+ .RELEASE.jar hamcrest-2.2.jar jakarta.persistence-api-2.2.3.jar spring-
+ boot-starter-logging-2.3.3.RELEASE.jar log4j-to-slf4j-2.13.3.jar asm-5.
+ 0.4.jar spring-data-jpa-2.3.3.RELEASE.jar jackson-datatype-jsr310-2.11.
+ 2.jar jaxb-runtime-2.3.3.jar byte-buddy-1.10.14.jar logback-core-1.2.3.
+ jar spring-test-5.2.8.RELEASE.jar HikariCP-3.4.5.jar junit-platform-com
+ mons-1.6.2.jar txw2-2.3.3.jar spring-aspects-5.2.8.RELEASE.jar junit-pl
+ atform-engine-1.6.2.jar tomcat-embed-core-9.0.37.jar spring-context-5.2
+ .8.RELEASE.jar javax.json.bind-api-1.0.jar spring-boot-test-autoconfigu
+ re-2.3.3.RELEASE.jar antlr-2.7.7.jar jakarta.activation-api-1.2.2.jar j
+ axb-api-2.3.0.jar hibernate-commons-annotations-5.1.0.Final.jar jsonass
+ ert-1.5.0.jar opentest4j-1.2.0.jar mysql-connector-java-8.0.21.jar logb
+ ack-classic-1.2.3.jar jul-to-slf4j-1.7.30.jar spring-orm-5.2.8.RELEASE.
+ jar json-path-2.4.0.jar spring-boot-test-2.3.3.RELEASE.jar spring-webmv
+ c-5.2.8.RELEASE.jar jakarta.activation-1.2.2.jar aspectjweaver-1.9.6.ja
+ r spring-aop-5.2.8.RELEASE.jar objenesis-2.6.jar spring-boot-starter-jd
+ bc-2.3.3.RELEASE.jar spring-jcl-5.2.8.RELEASE.jar jackson-annotations-2
+ .11.2.jar
+
